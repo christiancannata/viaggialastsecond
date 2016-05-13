@@ -1,0 +1,849 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 2.1
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.light-grey {
+    background: #e6e6e6 !important;
+}
+
+.tab-content form {
+    display: none
+}
+
+.dark-violet {
+    background: #110329 !important;
+}
+
+*:not(i):not(.fa) {
+    font-family: 'Karla', 'Helvetica Neue', 'sans-serif' !important;
+}
+
+.cyan, .cyan.darken-2 {
+    background-color: #F04D52 !important;
+}
+
+footer.page-footer {
+    background: #F04D52 !important;
+}
+
+.language-detail {
+    float: left;
+    width: 33%;
+
+}
+
+.fa-star, .fa-star-o {
+    color: #fcc54e !important;
+    font-size: 0.8rem !important;
+}
+
+.input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), input[type="email"]:focus:not([readonly]), input[type="url"]:focus:not([readonly]), input[type="time"]:focus:not([readonly]), input[type="date"]:focus:not([readonly]), input[type="datetime-local"]:focus:not([readonly]), input[type="tel"]:focus:not([readonly]), input[type="number"]:focus:not([readonly]), input[type="search"]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #F04D52;
+    box-shadow: 0 1px 0 0 #F04D52;
+}
+
+input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), input[type="email"]:focus:not([readonly]), input[type="url"]:focus:not([readonly]), input[type="time"]:focus:not([readonly]), input[type="date"]:focus:not([readonly]), input[type="datetime-local"]:focus:not([readonly]), input[type="tel"]:focus:not([readonly]), input[type="number"]:focus:not([readonly]), input[type="search"]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #F04D52;
+    box-shadow: 0 1px 0 0 #F04D52;
+}
+
+input[type="text"]:focus:not([readonly]) + label, input[type="password"]:focus:not([readonly]) + label, input[type="email"]:focus:not([readonly]) + label, input[type="url"]:focus:not([readonly]) + label, input[type="time"]:focus:not([readonly]) + label, input[type="date"]:focus:not([readonly]) + label, input[type="datetime-local"]:focus:not([readonly]) + label, input[type="tel"]:focus:not([readonly]) + label, input[type="number"]:focus:not([readonly]) + label, input[type="search"]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #F04D52;
+}
+
+.input-field .prefix.active {
+    color: #F04D52;
+}
+
+.tptr-widget {
+    background-size: cover;
+    border-radius: 55px;
+    cursor: pointer;
+    display: block;
+    height: 108px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#work-collections .collapsible-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: block;
+    height: 8rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+}
+
+.light-blue {
+    background: #20BAD1 !important;
+}
+
+.light-yellow {
+    background: #fcc559 !important;
+}
+
+.editable-buttons .btn, .editable-buttons .btn-large {
+    background-color: #F04D52 !important;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-out 0s;
+}
+
+.editable-buttons .btn, .editable-buttons .btn-large, .editable-buttons .btn-flat {
+    border: medium none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    outline: 0 none;
+    padding: 0rem 0;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+a.editable {
+    color: #444444 !important;
+}
+
+a.editable:hover {
+    color: #444444 !important;
+
+}
+
+.btn-floating, .red {
+    background-color: #F04D52 !important;
+}
+
+
+.link-item a {
+    color: #444 !important;
+}
+
+.link-item:hover {
+    background: #e3e3e3 !important;
+    -webkit-transition: background 200ms;
+    -moz-transition: background 200ms;
+    -ms-transition: background 200ms;
+    -o-transition: background 200ms;
+    transition: background 200ms;
+}
+
+.alert-row {
+    background: #F7A6A8;
+}
+
+.card .card-image img.company-background {
+    border-radius: 2px 2px 0 0;
+    bottom: 0;
+    left: 0;
+    margin-top: -300px !important;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+.btn-facebook:hover {
+    background: white;
+    color: #3b5998 !important;
+}
+
+.btn-facebook:hover .icon-button, .btn-facebook:hover span {
+    color: #3b5998 !important;
+    border-color: #3b5998 !important;
+}
+
+#profile-page-header.profile-header .card-image {
+    height: 130px;
+}
+
+#profile-page-header.profile-header .card-profile-image {
+    cursor: pointer;
+    left: 40px;
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    width: 110px;
+    z-index: 1;
+}
+
+.month-picker {
+    display: none;
+    position: absolute;
+    width: 300px !important;
+    z-index: 9999;
+}
+
+.ui-icon-circle-triangle-w {
+    background-image: url(http://legacy.australianetwork.com/img/icon_arrow_left_black.png) !important;
+    background-position: -4px -3px !important;
+}
+
+.ui-icon-circle-triangle-e {
+    background-image: url(http://legacy.australianetwork.com/img/icon_arrow_right_black.png) !important;
+    background-position: -4px -3px !important;
+}
+
+.glyphicon.glyphicon-star-empty, .glyphicon.glyphicon-star {
+    color: #f04d52;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.card-content .required.validate {
+    font-size: 12px;
+    height: 2rem;
+    margin: 0;
+}
+
+.card-content .input-field {
+    margin-top: 0rem;
+    position: relative;
+}
+
+.btn-large:hover, .btn.red:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #FD0452;
+}
+
+.std-modal .modal-content {
+    padding: 0 !important;
+}
+
+.jsgrid-edit-row > td, .jsgrid-filter-row > td, .jsgrid-grid-body, .jsgrid-grid-header, .jsgrid-header-row > th, .jsgrid-insert-row > td {
+    border: none !important;
+}
+
+.jsgrid-grid-body td {
+    border: none !important;
+}
+
+.vacancy-candidate-photo > .circle {
+    width: 80px;
+    height: 80px;
+}
+
+.vacancy-candidate-info > p:first-child {
+    line-height: 0.5rem;
+}
+
+.card-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 65px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+ul.card-subtitle {
+    padding: 0;
+    margin: 10px 0 10px 0;
+    list-style: none;
+}
+
+ul.card-subtitle > li {
+    display: inline-block;
+    margin-right: 1px;
+}
+
+.btn-floating.waves-effect.waves-light.close-small-button {
+    font-size: 1.2rem !important;
+    height: 17px;
+    line-height: 17px;
+    position: absolute;
+    right: 0;
+    width: 17px;
+    margin-right: 10px;
+}
+
+.btn-floating.waves-effect.waves-light.close-small-button i {
+    font-size: 1rem !important;
+    line-height: 0px;
+}
+
+h4.task-card-title {
+    font-size: 1.25rem !important;
+}
+
+.input-field div.error {
+    position: relative;
+    top: -1rem;
+    left: 0rem;
+    font-size: 0.8rem;
+    color: #FD0452;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.button-action {
+    margin-top: 30px;
+}
+
+.button-action button {
+    margin-left: 5px;
+}
+
+.br-theme-fontawesome-stars .br-widget {
+    height: 28px;
+    white-space: nowrap;
+}
+
+.br-theme-fontawesome-stars .br-widget a {
+    font: normal normal normal 18px/1 FontAwesome !important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    margin-right: 2px;
+}
+
+.br-theme-fontawesome-stars .br-widget a:after {
+    content: '\f005';
+    color: #dddddd;
+}
+
+.br-theme-fontawesome-stars .br-widget a.br-active:after {
+    color: #ffdf88;
+}
+
+.br-theme-fontawesome-stars .br-widget a.br-selected:after {
+    color: #ffdf88;
+}
+
+.br-theme-fontawesome-stars .br-widget .br-current-rating {
+    display: none;
+}
+
+@media print {
+    .br-theme-fontawesome-stars .br-widget a:after {
+        content: '\f006';
+        color: black;
+    }
+
+    .br-theme-fontawesome-stars .br-widget a.br-active:after,
+    .br-theme-fontawesome-stars .br-widget a.br-selected:after {
+        content: '\f005';
+        color: black;
+    }
+}
+.hide-rating-start .select-dropdown,.hide-rating-start .caret{
+    display: none!important;
+}
+
+
+.modify-avatar {
+    top: 0;
+    right: 0;
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+}
+
+.card-profile-image:hover .modify-avatar {
+    display: block;
+}
+
+.ui-autocomplete {
+    z-index: 111111;
+}
+
+textarea#vacancyAddDescription {
+    padding: 0 !important;
+}
+
+.dashed {
+    border: 1px dashed gray;
+}
+
+.ui-sortable-placeholder {
+    border: 3px dashed #aaa;
+    height: 45px;
+    width: 344px;
+    background: #ccc;
+}
+
+.btn-floating > .preloader-wrapper.small.active {
+    margin-top: 9px;
+    margin-left: 1px;
+}
+
+.btn-floating .spinner-layer.spinner-white {
+    border-color: white;
+}
+
+.margin-remove-15 {
+    margin-top: -15px;
+
+}
+
+ul.side-nav.leftside-navigation li a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a.editable:after {
+    font-family: FontAwesome;
+    content: "\f040";
+    margin-left: 10px;
+    font-size: 14px;
+    cursor:pointer;
+}
+a.editable:after:hover{
+    color: #F04D52 !important;
+}
+.editable-click, a.editable-click, a.editable-click:hover {
+    border-bottom: 0px dashed #0088cc !important;
+    text-decoration: none;
+}
+
+.btn-red {
+    background: #F04D52 !important;
+}
+
+.jsgrid-table {
+    width: 100% !important;
+}
+
+.jsgrid-load-panel {
+    border: none !important;
+}
+
+.jsgrid-load-shader {
+    background: white !important;
+}
+
+.ajax-grid.jsgrid {
+    min-height: 100px;
+}
+
+.disabled {
+    opacity: 0.1;
+}
+
+.btn--linkedin {
+    background: #0177B5 !important;
+}
+
+.sortable {
+    cursor: pointer;
+}
+
+.grey-text b, .industry-label {
+    color: black !important;
+}
+
+.vacancy-candidate-info p strong, .grey-text.ultra-small b {
+    text-transform: capitalize !important;
+}
+
+.vacancy-candidate-info p {
+    margin-top: 0px !important;
+}
+
+.jsgrid-alt-row > td {
+    background: #e8e8e8 none repeat scroll 0 0 !important;
+}
+
+.jsgrid-alt-row > td:hover, .jsgrid-row > td:hover, .jsgrid-selected-row-2 td {
+    background: #F04D52 !important;
+    color: white !important;
+
+}
+
+#jsGrid-basic .jsgrid-alt-row:hover > td, #jsGrid-basic .jsgrid-row > td:hover, #jsGrid-basic .jsgrid-selected-row-2 td {
+    background: #c4e2ff !important;
+    color: inherit !important;
+}
+
+.jsgrid-alt-row > td:hover .grey-text, .jsgrid-alt-row > td:hover .grey-text b, .jsgrid-row > td:hover .grey-text, .jsgrid-row > td:hover .grey-text b, .jsgrid-selected-row-2 td .grey-text b, .jsgrid-selected-row-2 td .grey-text {
+    color: white !important;
+}
+
+.jsgrid-table td {
+    height: 85px !important;
+}
+
+#jsGrid-basic .jsgrid-table td {
+    height: auto !important;
+}
+
+.work-experience .card-title {
+    line-height: 30px !important;
+}
+
+.comment {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.btn.green.waves-effect.waves-light.white-text.download-cv {
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 100%;
+    background: #C9C7C7 !important;
+}
+
+.grey-meritocracy-user {
+    background: #8c8c8c !important;
+}
+.form-edit input {
+    color: #f0f0f0!important;
+}
+.form-edit i{
+    color: white!important;
+}
+.margin-bottom-15{
+    margin-bottom: 15px;
+}
+.summary-box .card-content {
+    margin-top: -18px;
+}
+.circle.z-depth-2.responsive-img.activator.avatar-image {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 20px;
+}
+.profile-form .prefix {
+    display: block;
+}
+.circle.responsive-img.valign.profile-image {
+    height: 50px;
+    width: 50px;
+}
+
+.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content {
+    z-index: 2500 !important;
+}
+
+.combodate select {
+    display: inline;
+}
+
+.chip2 {
+    background-color: #e4e4e4;
+    border-radius: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    height: 28px;
+    line-height: 28px;
+    padding: 0px 5px;
+}
+
+#incoming .btn-block {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.vacancy-candidate-info p.title-name {
+    line-height: 1rem;
+}
+
+.jsgrid-grid-body {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sweet-alert button.confirm {
+    background-color: #F04D52 !important;
+}
+
+.sweet-alert input {
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #F04D52 !important;
+}
+
+.red-foreground {
+    color: #F04D52 !important;
+    border: 1px solid #F04D52;
+}
+
+#login-page {
+    min-width: 500px;
+}
+
+.trumbowyg-editor ul, .trumbowyg-editor ul li {
+    list-style: disc !important;
+}
+
+.trumbowyg-editor, .trumbowyg-editor {
+
+    padding: 10px 10px 10px 20px !important;
+}
+
+.trumbowyg-box {
+    margin: 50px 0 20px 0 !important;
+}
+
+.comment-ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.comment-ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#dropdown-db {
+    width: 250px !important;
+}
+
+.not-bold {
+    color: grey;
+}
+
+.result-search h4 {
+    font-size: 20px;
+}
+
+.result-search h5 {
+    font-size: 18px;
+    color: #888194;
+}
+
+.result-search {
+    margin-bottom: 0px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 115px;
+}
+
+#ui-id-1 li {
+    border-top: 1px solid #d1d1d1;
+    list-style: none !important;
+}
+
+#ui-id-1 li.ui-state-focus {
+    border-top: 1px solid #d1d1d1 !important;
+    list-style: none !important;
+}
+
+.result-search h6 {
+    color: #888194;
+    font-size: 14px;
+    font-weight: normal !important;
+}
+
+span.title-name.bold {
+    font-size: 17px;
+}
+
+input.header-search-input {
+    background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 24px;
+    outline: medium none;
+    padding: 8px 8px 8px 72px;
+    transition: all 200ms ease 0s;
+    width: 70%;
+}
+
+#profile-page-about-details .editable-buttons {
+    display: inline-block;
+    margin-left: -15px;
+    position: relative;
+    vertical-align: top;
+}
+
+#profile-page-about-details select {
+    padding: 0px !important;
+}
+
+#profile-page-about-details .combodate {
+    margin-right: 30px
+}
+
+.grey-meritocracy-user label {
+    color: white !important;
+}
+
+.fadeMe {
+    opacity: 0.2;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.sweet-alert {
+    background: rgba(239, 77, 82, 0.95) !important;
+    font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.sweet-alert p {
+    color: white !important;
+    font-size: 16px !important;
+}
+
+.sweet-alert h2 {
+    color: white !important;
+    font-size: 24px !important;
+}
+
+.application-button:hover {
+    background-color: rgb(100, 100, 100) !important;
+    color: white !important;
+}
+
+.sweet-alert button {
+    border-radius: 0 !important;
+    -webkit-transition: background-color 200ms !important;
+    -moz-transition: background-color 200ms !important;
+    -ms-transition: background-color 200ms !important;
+    -o-transition: background-color 200ms !important;
+    transition: background-color 200ms !important;
+}
+
+.sweet-alert .sa-icon {
+    border-color: white !important;
+}
+
+.sweet-alert .sa-icon .sa-body, .sweet-alert .sa-icon.sa-error .sa-line {
+    background-color: white !important;
+}
+
+.sweet-alert .sa-icon .sa-dot {
+    background-color: white !important;
+}
+
+.pulseWarningIns, .pulseWarning {
+    animation: none !important;
+    -webkit-animation: none !important;
+}
+
+.sweet-alert button.cancel {
+    background-color: #110329 !important;
+    color: white !important;
+}
+
+.sweet-alert button.confirm {
+    background-color: #F04D52 !important;;
+    color: white !important;;
+    -webkit-transition: background-color 200ms;
+    -moz-transition: background-color 200ms;
+    -ms-transition: background-color 200ms;
+    -o-transition: background-color 200ms;
+    transition: background-color 200ms;
+    border: 1px solid white !important;
+}
+
+.sweet-alert button.cancel:hover {
+    background-color: white !important;
+    color: #110329 !important;
+}
+
+.sweet-alert button.confirm:hover {
+    color: white !important;
+    background-color: #20BAD1 !important;
+}
+
+#education-collections .card, #work-collections .card {
+    padding: 10px !important;
+}
+
+.sweet-alert .sa-icon.sa-success::before, .sweet-alert .sa-icon.sa-success::after, .sweet-alert .sa-icon.sa-success .sa-fix {
+    display: none !important;
+}
+
+form .label-required {
+    color: #F04D52 !important;
+}
+
+.mdi-alert-warning.right{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.modal-history {
+    padding: 20px;
+}
+
+.form-loader{
+    z-index:9999999999999999999
+}
+
+.sponsored .chip2.light-blue.white-text {
+    background: #fcc54e none repeat scroll 0 0 !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.unsponsored .chip2 {
+    border-radius: 5px;
+    text-transform: uppercase;
+    -webkit-transition: background-color 200ms;
+    -moz-transition: background-color 200ms;
+    -ms-transition: background-color 200ms;
+    -o-transition: background-color 200ms;
+    transition: background-color 200ms;
+}
+.unsponsored:hover .chip2{
+    color: white !important;
+    background-color: #20BAD1 !important;
+}
+.change-status i{
+    cursor:pointer;
+    font-size:20px
+}
+.model-email-content{
+}
+
+
+#myContainer{
+    display:none !important;
+}
+
+.side-nav.fixed{
+    left:0%;
+}
+
+.select-label{
+    width:65%;
+    text-align: center;
+    margin-top:100px;
+}
+
+.trumbowyg-box, .trumbowyg-editor{
+    min-height:90px !important;
+}

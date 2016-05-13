@@ -1,0 +1,8 @@
+{
+  "name": "Meritocracy",
+  "short_name": "Meritocracy",
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "903803777257",
+  "gcm_user_visible_only": true
+}

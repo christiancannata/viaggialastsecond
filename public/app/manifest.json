@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Meritocracy",
+  "description": "Esplora le aziende che investono sul talento. Offerte di lavoro in tutto il mondo.",
+  "version": "1.0.0",
+  "icons": {
+    "128": "m128.png"
+  },
+  "app": {
+    "urls": [
+      "https://meritocracy.is/app/chrome-app-info"
+    ],
+    "launch": {
+      "web_url": "https://meritocracy.is"
+    }
+  },
+  "permissions": [
+    "notifications"
+  ]
+}

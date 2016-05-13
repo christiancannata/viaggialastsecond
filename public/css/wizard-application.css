@@ -1,0 +1,602 @@
+.slideshow-container,.footer{
+    display:none !important;
+}
+
+
+
+/** initial setup **/
+.nano {
+    position : relative;
+    width    : 100%;
+    height   : 100%;
+    overflow : hidden;
+}
+.nano > .nano-content {
+    position      : absolute;
+    overflow      : scroll;
+    overflow-x    : hidden;
+    top           : 0;
+    right         : 0;
+    bottom        : 0;
+    left          : 0;
+}
+.nano > .nano-content:focus {
+    outline: thin dotted;
+}
+.nano > .nano-content::-webkit-scrollbar {
+    display: none;
+}
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+    display: block;
+}
+.nano > .nano-pane {
+    background : rgba(0,0,0,.25);
+    position   : absolute;
+    width      : 10px;
+    right      : 0;
+    top        : 0;
+    bottom     : 0;
+    visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
+    opacity    : .01;
+    -webkit-transition    : .2s;
+    -moz-transition       : .2s;
+    -o-transition         : .2s;
+    transition            : .2s;
+    -moz-border-radius    : 5px;
+    -webkit-border-radius : 5px;
+    border-radius         : 5px;
+}
+.nano > .nano-pane > .nano-slider {
+    background: #444;
+    background: rgba(0,0,0,.5);
+    position              : relative;
+    margin                : 0 1px;
+    -moz-border-radius    : 3px;
+    -webkit-border-radius : 3px;
+    border-radius         : 3px;
+}
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+    visibility : visible\9; /* Target only IE7 and IE8 with this hack */
+    opacity    : 0.99;
+}
+/*
+    Common
+*/
+
+/*
+    Common
+*/
+
+.wizard,
+.tabcontrol {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wizard a,
+.tabcontrol a {
+    outline: 0;
+}
+
+.wizard ul,
+.tabcontrol ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.wizard ul > li,
+.tabcontrol ul > li {
+    display: block;
+    padding: 0;
+}
+
+/* Accessibility */
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info {
+    position: absolute;
+    left: -999em;
+}
+
+.wizard > .content > .title,
+.tabcontrol > .content > .title {
+    position: absolute;
+    left: -999em;
+}
+
+/*
+    Wizard
+*/
+
+.wizard > .steps {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.wizard.vertical > .steps {
+    display: inline;
+    float: left;
+    width: 30%;
+}
+
+.wizard > .steps .number {
+    font-size: 1.429em;
+}
+
+
+.wizard > .steps > ul > li,
+.wizard > .actions > ul > li {
+    float: left;
+}
+
+.wizard.vertical > .steps > ul > li {
+    float: none;
+    width: 100%;
+}
+
+.wizard > .steps a,
+.wizard > .steps a:hover,
+.wizard > .steps a:active {
+    display: block;
+    width: auto;
+    margin: 0 0.5em 0.5em;
+    padding: 1em 1em;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard > .steps .disabled a,
+.wizard > .steps .disabled a:hover,
+.wizard > .steps .disabled a:active {
+    background: #eee;
+    color: #aaa;
+    cursor: default;
+}
+
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active {
+    background: #F04D52;
+    color: #fff;
+    cursor: default;
+}
+
+.wizard > .steps .done a,
+.wizard > .steps .done a:hover,
+.wizard > .steps .done a:active {
+    background: #FF8C90;
+    color: #fff;
+}
+
+.wizard > .steps .error a,
+.wizard > .steps .error a:hover,
+.wizard > .steps .error a:active {
+    background: #F04D52;
+    color: #fff;
+}
+
+.wizard > .content {
+    display: block;
+    min-height: 40em;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+
+}
+
+.wizard.vertical > .content {
+    display: inline;
+    float: left;
+    margin: 0 2.5% 0.5em 2.5%;
+    width: 65%;
+}
+
+.wizard > .content > .body {
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+.wizard > .content > .body ul {
+    list-style: disc !important;
+}
+
+.wizard > .content > .body ul > li {
+    display: list-item;
+}
+
+.wizard > .actions {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+
+.wizard.vertical > .actions {
+    display: inline;
+    float: right;
+    margin: 0 2.5%;
+    width: 95%;
+}
+
+.wizard > .actions > ul {
+    display: inline-block;
+    text-align: right;
+}
+
+.wizard > .actions > ul > li {
+    margin: 0 0.5em;
+}
+
+.wizard.vertical > .actions > ul > li {
+    margin: 0 0 0 1em;
+}
+
+.wizard > .actions a,
+.wizard > .actions a:hover,
+.wizard > .actions a:active {
+    background: #0DC143;
+    color: #fff;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+}
+
+.wizard > .actions li:first-child a {
+    background: #e3e3e3 !important;
+    color: white !important;
+}
+
+.wizard > .actions .disabled a,
+.wizard > .actions .disabled a:hover,
+.wizard > .actions .disabled a:active {
+    background: #eee;
+    color: #aaa;
+}
+
+.wizard > .loading {
+}
+
+.wizard > .loading .spinner {
+}
+
+/*
+Tabcontrol
+*/
+
+.tabcontrol > .steps {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.tabcontrol > .steps > ul {
+    position: relative;
+    margin: 6px 0 0 0;
+    top: 1px;
+    z-index: 1;
+}
+
+.tabcontrol > .steps > ul > li {
+    float: left;
+    margin: 5px 2px 0 0;
+    padding: 1px;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabcontrol > .steps > ul > li:hover {
+    background: #edecec;
+    border: 1px solid #bbb;
+    padding: 0;
+}
+
+.tabcontrol > .steps > ul > li.current {
+    background: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 0 none;
+    padding: 0 0 1px 0;
+    margin-top: 0;
+}
+
+.tabcontrol > .steps > ul > li > a {
+    color: #5f5f5f;
+    display: inline-block;
+    border: 0 none;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li > a:hover {
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li.current > a {
+    padding: 15px 30px 10px 30px;
+}
+
+.tabcontrol > .content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    padding-top: 20px;
+}
+
+.tabcontrol > .content > .body {
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.tabcontrol > .content > .body ul {
+    list-style: disc !important;
+}
+
+.tabcontrol > .content > .body ul > li {
+    display: list-item;
+}
+
+
+
+.prefix {
+    color: #9e9e9e;
+}
+
+.input-field label.active {
+    font-size: 1rem !important;
+}
+
+#wizard input:not([type]),#wizard .input-field input[type="text"],#wizard input[type="password"],#wizard input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"],.input-field input[type="search"], textarea.materialize-textarea {
+    font-size: 1.5rem !important;
+}
+
+#wizard .input-field label {
+    margin-top: -0.2rem !important;
+}
+
+#wizard .input-field input,#wizard  input:not([type]),#wizard .input-field input[type="text"],#wizard  input[type="password"],#wizard  input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"],.input-field input[type="search"], textarea.materialize-textarea {
+    margin-bottom: 60px !important;
+}
+
+.picker__day-display, .picker__weekday-display {
+    display: none !important;
+}
+
+#wizard .input-field .prefix ~ input, .input-field .prefix ~ textarea,#wizard textarea {
+    margin-left: 3rem !important;
+    width: calc(95% - 3rem) !important;
+
+}
+
+.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content {
+    list-style: none;
+    padding: 0px;
+    padding-top: 30px;
+    background: #EEEEEE;
+
+}
+
+.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content li {
+    background: #EEEEEE;
+}
+
+.ui-autocomplete {
+    border-radius: 0px;
+}
+
+.ui-menu .ui-menu-item a {
+    height: 20px;
+    font-size: 20px;
+}
+
+.ui-menu-item.ui-state-focus {
+
+}
+.box-summary-wizard.first{
+    margin-left:0px;
+}
+
+.box-summary-wizard {
+    background: white none repeat scroll 0 0;
+    border: 1px solid #e3e3e3;
+    float: left;
+    margin-left: 2%;
+    min-height: 225px;
+    padding: 10px;
+    text-align: center;
+    width: 32%;
+}
+
+.box-summary-wizard i {
+    text-align: center;
+    font-size: 60px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box-summary-wizard .title {
+    margin-bottom: 10px;
+}
+
+.box-summary-wizard .title, .box-summary-wizard p {
+    width: 100%;
+    text-align: center;
+}
+
+.box-summary-wizard .location {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.box-summary-wizard .location i {
+    display: inline;
+    font-size: 16px;
+    margin: 0;
+}
+
+.nano-language .input-field input {
+    margin-bottom: 0px !important;
+    font-size: 1.5rem !important;
+}
+
+.glyphicon.glyphicon-star-empty, .glyphicon.glyphicon-star {
+    font-size: 1.5rem;
+    color:#F04D52;
+    cursor:pointer;
+}
+
+.btn-floating.remove {
+    background-color: #f04d52;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    width: 30px;
+    z-index: 1;
+}
+
+
+.btn-floating.remove i {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: center;
+    width: inherit;
+}
+.row.empty{
+    opacity:0.3;
+}
+
+
+.month-picker {
+    display: none;
+    position: absolute;
+    width: 300px !important;
+    z-index: 9999;
+}
+
+
+.ui-icon-circle-triangle-w {
+    background-image: url(http://legacy.australianetwork.com/img/icon_arrow_left_black.png) !important;
+    background-position: -4px -3px !important;
+}
+
+.ui-icon-circle-triangle-e {
+    background-image: url(http://legacy.australianetwork.com/img/icon_arrow_right_black.png) !important;
+    background-position: -4px -3px !important;
+}
+
+a .box-summary-wizard h3,a .box-summary-wizard span{
+    color:#0e001f !important;
+}
+
+a .box-summary-wizard i{
+    color:#F04D52;
+}
+a .box-summary-wizard:hover i,a .box-summary-wizard:hover h3,a .box-summary-wizard:hover span{
+    color:white !important;
+
+}
+a .box-summary-wizard:hover{
+    background:#F04D52;
+    color:white;
+    -webkit-transition: background 100ms;
+    -moz-transition: background 100ms;
+    -ms-transition: background 100ms;
+    -o-transition: background 100ms;
+    transition: background 100ms;
+}
+
+.box-summary-wizard:first-child{
+    margin-left:0px;
+}
+.tos .fullpage-wrapper,.privacy .fullpage-wrapper{
+    height:20% !important;
+}
+
+.nano-work .select-dropdown{
+    text-indent: 3.4rem;
+}
+@media (max-width: 991px) {
+    .container {
+        width: 100%!important;
+    }
+    .container.padded{
+        padding-top: 10px;
+    }
+    legend{
+        font-size: 18px;
+    }
+
+}
+
+.technology-background{
+    background-image: none;
+    background-repeat: none;
+    background-color: white;
+}
+#wizard .input-field input, #wizard  input:not([type]), #wizard .input-field input[type="text"], #wizard  input[type="password"], #wizard  input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], .input-field input[type="search"], textarea.materialize-textarea{
+    margin-bottom: 35px!important;
+}
+.caret{
+    border-left: none!important;
+    border-right: none!important;
+}
+#wizard input:not([type]), #wizard .input-field input[type="text"], #wizard input[type="password"], #wizard input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], .input-field input[type="search"], textarea.materialize-textarea{
+    font-size:1.0rem!important;
+    color: #9e9e9e!important;
+}
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active{
+    background-color: #F04D52;
+    color: white;
+    margin-top: 10px;
+    -webkit-transition: background-color 200ms;
+    -moz-transition: background-color 200ms;
+    -ms-transition: background-color 200ms;
+    -o-transition: background-color 200ms;
+    transition: background-color 200ms;
+    padding: 10px 40px 10px 40px!important;
+}
+.nano-work .select-dropdown {
+    text-indent: 0rem!important;
+}
+#wizard input:not([type]), #wizard input[type=text], #wizard input[type=password], #wizard input[type=email], #wizard input[type=url], #wizard input[type=time], #wizard input[type=date], #wizard input[type=datetime-local], #wizard input[type=tel], #wizard input[type=number], #wizard input[type=search], #wizard textarea.materialize-textarea{
+    margin: 0 0 15px 45px!important;
+}
+.select-wrapper span.caret{
+    right: -30px!important
+}
+.header-menu .navbar-nav{
+    display: none;
+}
+.header-menu-btn-1{
+    display:none;
+}

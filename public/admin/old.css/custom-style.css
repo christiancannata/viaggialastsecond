@@ -1,0 +1,194 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 2.1
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.cyan, .cyan.darken-2 {
+    background-color: #F04D52 !important;
+}
+
+ul.side-nav.leftside-navigation li.user-details {
+    background: #F04D52 !important;
+}
+
+footer.page-footer {
+    background: #F04D52 !important;
+}
+
+.language-detail {
+    float: left;
+    width: 33%;
+
+}
+
+.fa-star,.fa-star-o {
+    color: #F04D52 !important;
+}
+
+.input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), input[type="email"]:focus:not([readonly]), input[type="url"]:focus:not([readonly]), input[type="time"]:focus:not([readonly]), input[type="date"]:focus:not([readonly]), input[type="datetime-local"]:focus:not([readonly]), input[type="tel"]:focus:not([readonly]), input[type="number"]:focus:not([readonly]), input[type="search"]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #F04D52;
+    box-shadow: 0 1px 0 0 #F04D52;
+}
+
+input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), input[type="email"]:focus:not([readonly]), input[type="url"]:focus:not([readonly]), input[type="time"]:focus:not([readonly]), input[type="date"]:focus:not([readonly]), input[type="datetime-local"]:focus:not([readonly]), input[type="tel"]:focus:not([readonly]), input[type="number"]:focus:not([readonly]), input[type="search"]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #F04D52;
+    box-shadow: 0 1px 0 0 #F04D52;
+}
+input[type="text"]:focus:not([readonly]) + label, input[type="password"]:focus:not([readonly]) + label, input[type="email"]:focus:not([readonly]) + label, input[type="url"]:focus:not([readonly]) + label, input[type="time"]:focus:not([readonly]) + label, input[type="date"]:focus:not([readonly]) + label, input[type="datetime-local"]:focus:not([readonly]) + label, input[type="tel"]:focus:not([readonly]) + label, input[type="number"]:focus:not([readonly]) + label, input[type="search"]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #F04D52;
+}
+
+
+.input-field .prefix.active {
+    color: #F04D52;
+}
+
+.tptr-widget {
+    background-size: cover;
+    border-radius: 55px;
+    cursor: pointer;
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    height: 108px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#work-collections .collapsible-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: block;
+    height: 8rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+}
+
+.light-blue{
+    background: #20BAD1 !important;
+}
+.light-yellow{
+    background:#fcc559 !important;
+}
+.editable-buttons .btn,.editable-buttons .btn-large {
+    background-color: #F04D52 !important;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-out 0s;
+}
+.editable-buttons .btn i{
+    color: #fff !important;
+
+}
+.editable-buttons .btn,.editable-buttons .btn-large,.editable-buttons .btn-flat {
+    border: medium none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0 none;
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+a.editable{
+    color:white !important;
+}
+.ui-datepicker-calendar{
+    display: none;
+}
+
+
+.btn-floating,.red {
+    background-color: #F04D52 !important;
+
+}
+
+.link-item a{
+    color:#444 !important;
+}
+
+.link-item:hover{
+    background:#e3e3e3 !important;
+    -webkit-transition: background 200ms;
+    -moz-transition: background 200ms;
+    -ms-transition: background 200ms;
+    -o-transition: background 200ms;
+    transition: background 200ms;
+}
+.alert-row{
+    background: #F7A6A8;
+}
+
+.card .card-image img.company-background {
+    border-radius: 2px 2px 0 0;
+    bottom: 0;
+    left: 0;
+    margin-top: -300px !important;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+
+.btn-facebook:hover {
+    background: white;
+    color: #3b5998 !important;
+}
+
+.btn-facebook:hover .icon-button, .btn-facebook:hover span {
+    color: #3b5998 !important;
+    border-color: #3b5998 !important;
+}
+
+#profile-page-header.profile-header .card-image {
+    height: 130px;
+}
+
+#profile-page-header.profile-header .card-profile-image {
+    cursor: pointer;
+    left: 40px;
+    margin: 0;
+    position: absolute;
+    top: 90px;
+    width: 110px;
+    z-index: 1;
+}
+
+
+
+.month-picker {
+    display: none;
+    position: absolute;
+    width: 300px !important;
+    z-index: 9999;
+}
+
+
+.ui-icon-circle-triangle-w {
+    background-image: url(http://legacy.australianetwork.com/img/icon_arrow_left_black.png) !important;
+    background-position: -4px -3px !important;
+}
+
+.ui-icon-circle-triangle-e {
+    background-image: url(http://legacy.australianetwork.com/img/icon_arrow_right_black.png) !important;
+    background-position: -4px -3px !important;
+}

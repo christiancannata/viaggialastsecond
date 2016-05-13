@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Meritocracy
+        psr4_prefix: Meritocracy
+        src_path: app

@@ -1,0 +1,27 @@
+/.env
+/.env.example
+
+# Laravel
+/bootstrap/compiled.php
+vendor
+
+# Configuration
+/app/config/local
+/app/config/staging
+/app/config/production
+
+/node_modules
+
+.env
+# Composer
+composer.phar
+
+
+# OS
+.DS_Store
+.idea/
+vagrant
+.vagrant
+
+# Packages
+_ide_helper.php

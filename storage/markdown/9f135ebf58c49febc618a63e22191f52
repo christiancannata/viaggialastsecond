@@ -1,0 +1,21 @@
+<p>FORMAT: 1A</p>
+
+<h1>Meritocracy</h1>
+
+<h1>MeritocracyHttpControllersUserController</h1>
+
+<p>User resource representation.</p>
+
+<h2>Display a listing of the resource. [GET /]</h2>
+
+<h1>MeritocracyHttpControllersVacancyController</h1>
+
+<h2>Display a listing of the resource. [GET /]</h2>
+
+<h1>MeritocracyHttpControllersCompanyController</h1>
+
+<h2>Display a listing of the resource. [GET /]</h2>
+
+<h1>MeritocracyHttpControllersApplicationController</h1>
+
+<h2>Display a listing of the resource. [GET /]</h2>

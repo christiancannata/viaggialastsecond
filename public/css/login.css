@@ -1,0 +1,9 @@
+body {
+    background-color: #F04D52!important;
+}
+.logo-header {
+    margin-top: 30px;
+}
+a,button {
+    text-transform: none!important;
+}
